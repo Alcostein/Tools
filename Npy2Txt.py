@@ -11,7 +11,7 @@ if len(sys.argv) < 2 or len(sys.argv) > 3:
     print("Usage: Npz2Txt.py <filename> [<output_path>]")
     sys.exit(1)
 
-# ファイル名と出力パスを取得
+# コマンドライン引数からファイル名と出力パス（オプション）を取得
 filename = sys.argv[1]
 output_path = sys.argv[2] if len(sys.argv) == 3 else os.getcwd()
 
